@@ -153,14 +153,11 @@ class NaiveBayes(object):
         return accuracy   
     
     def accuracy_new(self,y_pred,y_actual): 
-        print(len(y_pred),len(y_actual))
         i=0
-        for index1,row1 in y_pred.iterrows():
-            print(index1)
-            for index2,row2 in y_actual.iterrows():
-                if (row1['id']==row2['id']):
-                    row2['topic']==row1['predicted']
-                    i+=1 
+        for index1,row1 in y_actual.iterrows(): 
+            index2= y_pred.index[y_pred['id']==row1['id']].tolist()[0]
+            if(y_pred.iloc[index2]['predicted']==row1['topic']):
+                i+=1 
         return i*100.0/len(y_pred)
                 
 
@@ -197,7 +194,7 @@ class NaiveBayes(object):
     
  
         y_df = pd.concat([y_filename,y_pred],axis=1) 
-        
+        y_df.sort_values(by='id')
         y_df.to_csv(path, header=['fileno','predicted_topic'], index=None, sep=',', mode='a') 
         
         return y_df

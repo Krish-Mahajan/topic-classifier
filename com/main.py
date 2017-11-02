@@ -83,7 +83,7 @@ if __name__=="__main__":
 
         print("Reading Testing Data...")
         test_data=read_data_test(dataset_directory)   
-        print(test_data.shape)
+    
         
 
         print("Tokinizing Test Data")
@@ -98,29 +98,26 @@ if __name__=="__main__":
         print("Making term document matrix of testing Data")
         tf_test = term_document(test_data_vector) 
 
-        '''
-        print("Making Delta on testing label")
-        delta_test = delta(test_data_vector,tf_test) 
-        '''
+        
+        #print("Making Delta on testing label")
+        #delta_test = delta(test_data_vector,tf_test) 
+        
         
     
         print("Predicting test Data")
         predict=nb.predict_proba_all(tf_test) 
         
         df_predictions=nb.print_predictions(predict, test_data, label_dict)
-        print(df_predictions.head())
+
      
         print("calculating accuracy")
         df_actual = read_data_accuracy("../data/testResult")
-        print(df_actual.head()) 
-        print(df_actual.shape)
-        print(df_actual[df_actual.id=='54626']) 
-        print(df_predictions[df_predictions.id=='54626']) 
-        
+
+   
         
         print("Accuracy is",nb.accuracy_new(df_predictions,df_actual))
 
-        print("Confusion Matrix:")
+        #print("Confusion Matrix:") 
         #print(nb.confusion_matrix(delta_test,predict,nb.label_dict))
         
      

@@ -2,25 +2,25 @@ Top words for topic  AUTOS
 car
 organization
 cars
-don
 posting
+don
+university
 host
 nntp
-university
 apr
-engine
+distribution
 
 Top words for topic  SPACE
 space
 nasa
 organization
 gov
-launch
 posting
+launch
 apr
 moon
-orbit
 earth
+nntp
 
 Top words for topic  ATHEISM
 god
@@ -28,9 +28,9 @@ don
 organization
 then
 keith
-atheism
-atheists
 posting
+atheists
+atheism
 believe
 nntp
 
@@ -48,31 +48,31 @@ circuit
 
 Top words for topic  POLITICS
 don
-organization
 president
+organization
 government
 stephanopoulos
 apr
+clinton
 time
 then
-clinton
 university
 
 Top words for topic  CHRISTIAN
 god
 jesus
 organization
-church
-believe
-christians
 don
+believe
+church
+christians
 christian
-christ
 bible
+christ
 
 Top words for topic  FORSALE
-organization
 sale
+organization
 university
 posting
 host
@@ -80,19 +80,19 @@ nntp
 distribution
 dos
 offer
-shipping
+please
 
 Top words for topic  GRAPHICS
-graphics
 organization
+graphics
 image
 university
 posting
-file
 host
-jpeg
+file
 nntp
-files
+software
+ftp
 
 Top words for topic  CRYPTO
 key
@@ -112,8 +112,8 @@ hockey
 organization
 game
 play
-nhl
 university
+nhl
 season
 games
 players
@@ -122,13 +122,13 @@ Top words for topic  RELIGION
 god
 organization
 jesus
-don
 christian
-then
-bible
 sandvik
-life
+don
+bible
+then
 world
+posting
 
 Top words for topic  MOTORCYCLES
 organization
@@ -169,14 +169,14 @@ health
 Top words for topic  WINDOWS
 max
 windows
-organization
 bhj
+organization
 giz
 file
 university
-dos
-files
 chz
+dos
+bxn
 
 Top words for topic  GUNS
 gun
@@ -184,11 +184,11 @@ organization
 guns
 don
 firearms
-weapons
 posting
-file
+weapons
 then
 control
+file
 
 Top words for topic  XWINDOWS
 window
@@ -200,7 +200,7 @@ motif
 mit
 widget
 entry
-output
+host
 
 Top words for topic  MIDEAST
 israel
@@ -223,18 +223,18 @@ university
 nntp
 host
 drive
-system
-scsi
+don
+computer
 
 Top words for topic  PC
 scsi
 drive
 organization
 card
-ide
-controller
 system
+ide
 bus
 disk
 university
+controller
 

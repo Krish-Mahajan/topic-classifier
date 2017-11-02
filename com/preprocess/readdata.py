@@ -56,7 +56,9 @@ def read_data_accuracy(path):
                 content = fo.read()
                 fo.close 
                 data.append({'id': str(document),'topic':topic})
-    return pd.DataFrame(data)
+    df = pd.DataFrame(data)
+    df.sort_values(by='id')
+    return df
 
 
 
@@ -75,5 +77,5 @@ def read_data_test(path):
             content = fo.read()
             fo.close 
             data.append({'id': str(topic),'text':content}) 
-    print(i)
+
     return pd.DataFrame(data)
