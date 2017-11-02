@@ -53,13 +53,4 @@ python main.py train ../data/train model-file 1.0  ##from command line
 - For fraction 0.0 : Accuracy 10%  
 
 
-## To do 
-1) Integrate github with eclipse
-2)push exisitng code
-3) Complete module for accuracy check 
-4) Add module for handling unlabeled data separately 
-5) Write ipynb,readme,requirements.txt 
-6) make a webapp and host through google app engine
-7) Write blog
-8) Do the same thing through scala pipeline
-9) Do the same thing throug tenserflow pipeline
+
