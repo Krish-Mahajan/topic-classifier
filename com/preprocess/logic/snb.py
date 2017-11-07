@@ -3,6 +3,7 @@ Created on Oct 16, 2017
 
 @author: krish.mahajan
 '''
+from sklearn.metrics.classification import accuracy_score
 """
 Text Classification using Naive Bayes on Expectation Maximization Principle
 w: word
@@ -145,42 +146,32 @@ class NaiveBayes(object):
         return p_x_c_log
 
         
-    def accuracy(self,result,delta_test):
-        i=0
-        for predict,actual in zip(result,delta_test):
-            if np.argmax(predict)==np.argmax(actual): i +=1 
-        accuracy = i*100.0/len(delta_test)
-        return accuracy   
     
-    def accuracy_new(self,y_pred,y_actual): 
-        i=0
+    def accuracy(self,y_pred,y_actual,path=None): 
+        if not path : path = './output/predictions_comparison.csv' 
+        
+        i=0 
+        df_compare_cols =['id','actual','predicted']
+        df_compare = []
+        
         for index1,row1 in y_actual.iterrows(): 
-            index2= y_pred.index[y_pred['id']==row1['id']].tolist()[0]
+            index2= y_pred.index[y_pred['id']==row1['id']].tolist()[0] 
+            df_compare.append([y_pred.iloc[index2]['id'],row1['topic'],y_pred.iloc[index2]['predicted']])
             if(y_pred.iloc[index2]['predicted']==row1['topic']):
-                i+=1 
-        return i*100.0/len(y_pred)
+                i+=1  
+                
+        df = pd.DataFrame(df_compare,columns=df_compare_cols) 
+        df_confusion= pd.crosstab(df.ix[:,1],df.ix[:,2])
+        
+        accuracy = i*100.0/len(y_pred) 
+        
+        df.to_csv(path, header=['id','actual','predicted'], index=None, sep=',', mode='a')
+        return accuracy,df_confusion
                 
 
-    def confusion_matrix(self,delta_test,predict,label_dict):
-        y_actual =[np.argmax(row) for row in delta_test]
-        y_pred=[np.argmax(row) for row in predict]
 
-        for row in range(len(y_actual)):
-            for key,value in label_dict.iteritems():
-                if value==y_actual[row]: y_actual[row]=key
-
-        for row in range(len(y_pred)):
-            for key,value in label_dict.iteritems():
-                if value==y_pred[row]: y_pred[row]=key 
-
-        y_actual = pd.Series(y_actual,name='Actual') 
-        y_pred = pd.Series(y_pred,name='predicted')
-
-        df_confusion = pd.crosstab(y_actual, y_pred)
-        return df_confusion 
     
-    
-        
+       
     def print_predictions(self,predict,test_data,label_dict,path=None): 
         if not path : path = './output/predictions.csv'
         y_pred=[np.argmax(row) for row in predict]

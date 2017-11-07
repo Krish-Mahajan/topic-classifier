@@ -36,22 +36,22 @@ def term_document(data):
     return td 
 
 
-def delta(data,td):
+def document_class(data,td):
     """
     delta: D x T matrix
     where delta_train(d,c) = 1 if document d belongs to class c
     """
     total_classes = len(np.unique(data[:,-1]))
     total_documents = td.shape[1]
-    delta_train = np.zeros((total_documents,total_classes))  
+    document_class = np.zeros((total_documents,total_classes))  
     
     label=data[:,-1]  
 
     #Filling Delta
     for row in range(len(label)) :
-        delta_train[row,int(label[row])]=1
+        document_class[row,int(label[row])]=1
         
-    return delta_train 
+    return document_class 
 
 def document_label(data,td):
     """

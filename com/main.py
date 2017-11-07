@@ -14,7 +14,7 @@ from com.preprocess.tokenizer import tokenize_train_data
 from com.preprocess.vectorize import *
 from com.preprocess.partition import partition_label_unlabeled
 from com.preprocess.partition import term_document
-from com.preprocess.partition import delta 
+from com.preprocess.partition import document_class
 from com.preprocess.logic import snb
 from com.preprocess.tokenizer import tokenize_test_data
 
@@ -52,14 +52,14 @@ if __name__=="__main__":
         tf_train_unlabel = term_document(train_data_vector_unlabel) 
 
         print("Making Delta on training label")
-        delta_train_label = delta(train_data_vector_label,tf_train_label) 
+        document_class_train_label = document_class(train_data_vector_label,tf_train_label) 
 
         print("Data Prepared")  
 
         nb=snb.NaiveBayes(vocab=word_index_map,label_dict=label_dict)
 
         print("Training EM naive Bayes Model...") 
-        nb.train_semi(tf_train_label,delta_train_label,tf_train_unlabel)  
+        nb.train_semi(tf_train_label,document_class_train_label,tf_train_unlabel)  
 
 
         print("Making distinctive_words for top 10 words in each topic")
@@ -99,26 +99,23 @@ if __name__=="__main__":
         tf_test = term_document(test_data_vector) 
 
         
-        #print("Making Delta on testing label")
-        #delta_test = delta(test_data_vector,tf_test) 
-        
-        
     
         print("Predicting test Data")
         predict=nb.predict_proba_all(tf_test) 
         
-        df_predictions=nb.print_predictions(predict, test_data, label_dict)
+        df_predictions=nb.print_predictions(predict, test_data, label_dict,path=None)
 
      
         print("calculating accuracy")
         df_actual = read_data_accuracy("../data/testResult")
 
-   
-        
-        print("Accuracy is",nb.accuracy_new(df_predictions,df_actual))
 
-        #print("Confusion Matrix:") 
-        #print(nb.confusion_matrix(delta_test,predict,nb.label_dict))
+        accuracy, confusion_matrix = nb.accuracy(df_predictions,df_actual,path=None)
+        
+        print("Accuracy is",accuracy)
+
+        print("Confusion Matrix:") 
+        print(confusion_matrix)
         
      
     
