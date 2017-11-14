@@ -27,8 +27,13 @@ topics.py
 snb.py   
 readme.md  
 
-### Instruction to train the data. (for ex.)     
-python main.py train ../data/train model-file 1.0  ##from command line
+### Instruction to train the data. (for ex.)    
+
+python main.py train /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train/train.csv model-file 0.7 NOT #From Command Line old method 
+
+python main.py train /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train_labeled/trainlabel.csv model-file 1.0  /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train_unlabeled/trainunlabel.csv    ## From Command Line new Method
+ 
+python main.py train ../data/train_labeled model-file 1.0  ##from command line
       mode = train   
       dataset-directory = training   
       model-file = model-file   
@@ -36,7 +41,7 @@ python main.py train ../data/train model-file 1.0  ##from command line
       train data/train model-file 0.8
 
 ### Instruction to test the data. (for ex.)  
- python main.py test ../data/testResult model-file 1.0  ##from command line
+python main.py test ../data/test  model-file 1.0  /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train_unlabeled/trainunlabel.csv  ##from command line
       mode = test  
       dataset-directory = testing  
       model-file = model-file   

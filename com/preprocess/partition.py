@@ -9,11 +9,28 @@ import random
 import numpy as np
 
 
+
+
+def partition_label_unlabeled(train_data_vector,label_dict):
+    """
+    To segregate training data into labeled and non labeled based on fraction
+    """ 
+
+
+    for index in range(len(train_data_vector)):
+        if ("unknown" in label_dict.keys()):
+            if (train_data_vector[index][-1]==label_dict["unknown"]):train_data_vector[index][-1]=-1
+    train_data_vector_labeled = train_data_vector[train_data_vector[:,-1]!=-1]
+    train_data_vector_unlabeled = train_data_vector[train_data_vector[:,-1]==-1]
+    
+    return train_data_vector_labeled,train_data_vector_unlabeled,label_dict
+
+
 def coin_flip(fraction):
     return (random.random()>=1-fraction)
 
 
-def partition_label_unlabeled(train_data_vector,fraction):
+def partition_label_unlabeled_old(train_data_vector,fraction):
     """
     To segregate training data into labeled and non labeled based on fraction
     """ 
@@ -25,7 +42,10 @@ def partition_label_unlabeled(train_data_vector,fraction):
     train_data_vector_labeled = train_data_vector[train_data_vector[:,-1]!=-1]
     train_data_vector_unlabeled = train_data_vector[train_data_vector[:,-1]==-1]
     
+    print(len(train_data_vector_labeled))
+    print(len(train_data_vector_unlabeled))
     return train_data_vector_labeled,train_data_vector_unlabeled
+
 
 
 def term_document(data): 

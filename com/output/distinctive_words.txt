@@ -2,11 +2,11 @@ Top words for topic  AUTOS
 car
 organization
 cars
-posting
 don
+posting
 university
-host
 nntp
+host
 apr
 distribution
 
@@ -18,9 +18,9 @@ gov
 posting
 launch
 apr
-moon
-earth
 nntp
+host
+moon
 
 Top words for topic  ATHEISM
 god
@@ -31,14 +31,14 @@ keith
 posting
 atheists
 atheism
+morality
 believe
-nntp
 
 Top words for topic  ELECTRONICS
 organization
+university
 host
 posting
-university
 nntp
 don
 power
@@ -52,47 +52,47 @@ president
 organization
 government
 stephanopoulos
-apr
 clinton
-time
 then
-university
+apr
+time
+cramer
 
 Top words for topic  CHRISTIAN
 god
 jesus
 organization
-don
 believe
-church
 christians
+don
+church
 christian
 bible
-christ
+then
 
 Top words for topic  FORSALE
 sale
 organization
 university
 posting
+dos
 host
 nntp
 distribution
-dos
 offer
-please
+shipping
 
 Top words for topic  GRAPHICS
 organization
 graphics
-image
 university
 posting
+jpeg
 host
-file
 nntp
-software
-ftp
+file
+image
+files
 
 Top words for topic  CRYPTO
 key
@@ -102,9 +102,9 @@ chip
 organization
 government
 system
-keys
 security
-privacy
+keys
+public
 
 Top words for topic  HOCKEY
 team
@@ -122,13 +122,13 @@ Top words for topic  RELIGION
 god
 organization
 jesus
-christian
 sandvik
 don
+christian
 bible
+kent
 then
-world
-posting
+apple
 
 Top words for topic  MOTORCYCLES
 organization
@@ -137,8 +137,8 @@ dod
 posting
 host
 nntp
-don
 apr
+don
 ride
 university
 
@@ -147,8 +147,8 @@ organization
 baseball
 team
 game
-don
 university
+don
 posting
 host
 nntp
@@ -157,10 +157,10 @@ apr
 Top words for topic  MEDICAL
 organization
 pitt
-don
 msg
-university
+don
 science
+university
 gordon
 banks
 medical
@@ -170,21 +170,21 @@ Top words for topic  WINDOWS
 max
 windows
 bhj
-organization
 giz
-file
-university
+organization
 chz
-dos
+file
 bxn
+rlk
+qax
 
 Top words for topic  GUNS
 gun
 organization
-guns
 don
-firearms
+guns
 posting
+firearms
 weapons
 then
 control
@@ -197,9 +197,9 @@ organization
 program
 server
 motif
+available
 mit
-widget
-entry
+windows
 host
 
 Top words for topic  MIDEAST
@@ -212,29 +212,29 @@ jews
 organization
 then
 don
-armenia
+university
 
 Top words for topic  MAC
 organization
-mac
 apple
+mac
 posting
 university
 nntp
 host
 drive
 don
-computer
+system
 
 Top words for topic  PC
-scsi
 drive
+scsi
 organization
 card
+windows
 system
-ide
-bus
 disk
 university
-controller
+bus
+ide
 
