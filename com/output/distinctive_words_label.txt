@@ -1,240 +1,240 @@
 Top words for topic  AUTOS
-car
 organization
-cars
-don
-posting
-nntp
+car
 host
-university
-engine
-apr
+nntp
+oil
+cars
+distribution
+posting
+sun
+don
 
 Top words for topic  SPACE
 space
+larson
+theory
+universe
 nasa
+time
 organization
-posting
-moon
-gov
-apr
-earth
-university
-orbit
+physical
+star
+radar
 
 Top words for topic  ATHEISM
 god
+evil
+compromise
 organization
-don
+truth
 then
-atheists
-atheism
-posting
 keith
-jesus
-religion
+cwru
+free
+women
 
 Top words for topic  ELECTRONICS
 organization
-host
-university
-posting
-nntp
-don
-power
 ground
+grounding
+conductor
 current
-distribution
+pin
+low
+don
+neutral
+circuit
 
 Top words for topic  POLITICS
-don
+human
+law
+rights
+child
 organization
-government
-president
-clinton
-apr
-time
-then
-university
-cramer
+plant
+boomer
+jobs
+life
+cement
 
 Top words for topic  CHRISTIAN
+hell
 god
-jesus
 organization
-church
-believe
 don
+jesus
+believe
+university
 christians
-christian
-time
-bible
+then
+day
 
 Top words for topic  FORSALE
-sale
 organization
-university
+sale
+shipping
 posting
+university
 host
 nntp
-distribution
-shipping
-offer
-price
+please
+manual
+computer
 
 Top words for topic  GRAPHICS
-graphics
-organization
 image
-jpeg
+organization
+graphics
+bit
 university
-posting
-file
+sphinx
 host
-files
+nntp
+posting
 images
 
 Top words for topic  CRYPTO
+anonymous
 key
-encryption
-clipper
-chip
-organization
-government
-system
-privacy
-security
+posting
+ripem
+service
+anonymity
 public
+anon
+mail
+system
 
 Top words for topic  HOCKEY
+hockey
 team
 organization
-game
-hockey
-play
 university
-season
-don
-nhl
-games
+game
+play
+win
+gainey
+president
+david
 
 Top words for topic  RELIGION
 god
+sandvik
 organization
 jesus
+law
+lord
+heaven
+moral
 christian
-don
-then
-bible
-sandvik
-world
-christ
+apple
 
 Top words for topic  MOTORCYCLES
-organization
 bike
-dod
+organization
 posting
 host
 nntp
-don
+dod
+rider
+motorcycle
 apr
-ride
-university
+don
 
 Top words for topic  BASEBALL
 organization
-baseball
-don
-university
-posting
-game
+morris
 team
-nntp
+posting
+baseball
+game
+steve
+university
 host
-players
+nntp
 
 Top words for topic  MEDICAL
+safety
+child
+gonorrhea
 organization
-pitt
-don
+health
+increased
+age
+reported
+children
 msg
-science
-university
-gordon
-banks
-geb
-time
 
 Top words for topic  WINDOWS
 max
 windows
-organization
 bhj
 giz
+organization
+qax
+fonts
 file
+font
 dos
-university
-win
-files
 
 Top words for topic  GUNS
 gun
+vancouver
+seattle
+homicide
 organization
-guns
-don
-weapons
-time
-posting
-then
+militia
+crime
+rates
 firearms
-nntp
+authors
 
 Top words for topic  XWINDOWS
-window
-file
-organization
-motif
-program
-output
-mit
+xfree
 server
-available
-entry
+svr
+organization
+mit
+window
+support
+bsd
+file
+information
 
 Top words for topic  MIDEAST
 israel
-turkish
 israeli
-jews
-armenians
-armenian
+arab
 organization
-then
-don
-university
+jews
+palestinians
+apr
+gaza
+civilians
+palestinian
 
 Top words for topic  MAC
 organization
-apple
 mac
-university
-posting
-drive
-nntp
 host
+nntp
+drive
+posting
+university
+apple
 don
-quadra
+thanks
 
 Top words for topic  PC
-scsi
 drive
+slave
+master
+jumper
 organization
-ide
-card
-bus
-university
-controller
-posting
+drives
+single
+pin
+dos
 system
 

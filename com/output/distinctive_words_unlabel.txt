@@ -1,14 +1,14 @@
 Top words for topic  AUTOS
-car
 organization
-cars
-don
+car
 posting
-university
-nntp
 host
-apr
-engine
+nntp
+cars
+distribution
+power
+miles
+university
 
 Top words for topic  SPACE
 space
@@ -18,27 +18,27 @@ gov
 posting
 launch
 apr
-moon
-earth
+university
+host
 nntp
 
 Top words for topic  ATHEISM
-god
-don
-organization
-then
 keith
+objective
+morality
+caltech
+organization
+sgi
+livesey
+don
 posting
-atheism
-atheists
-believe
-nntp
+moral
 
 Top words for topic  ELECTRONICS
 organization
+university
 host
 posting
-university
 nntp
 don
 power
@@ -50,85 +50,85 @@ Top words for topic  POLITICS
 don
 organization
 president
-government
 stephanopoulos
-apr
-time
+government
 clinton
 then
-university
+time
+apr
+cramer
 
 Top words for topic  CHRISTIAN
 god
 jesus
 organization
-believe
-christians
-church
 don
-christian
-christ
+believe
+then
 bible
+christian
+christians
+time
 
 Top words for topic  FORSALE
-organization
 sale
+organization
 university
 posting
+shipping
+offer
 host
 nntp
+condition
 distribution
-dos
-shipping
-mail
 
 Top words for topic  GRAPHICS
 organization
-graphics
 image
+graphics
 university
-posting
 file
+posting
 host
 files
-jpeg
 nntp
+jpeg
 
 Top words for topic  CRYPTO
 key
+organization
 encryption
 clipper
 chip
-organization
-government
+posting
+information
 system
-keys
-security
-privacy
+government
+don
 
 Top words for topic  HOCKEY
 team
-hockey
 organization
+hockey
 game
 play
-nhl
 university
+nhl
 season
+win
 games
-players
 
 Top words for topic  RELIGION
-god
-jesus
-organization
-don
-christian
-bible
-then
 sandvik
-life
-world
+kent
+apple
+newton
+god
+organization
+jesus
+wrote
+christian
+private
 
 Top words for topic  MOTORCYCLES
 organization
@@ -137,104 +137,104 @@ dod
 posting
 host
 nntp
-don
 apr
+don
 ride
 university
 
 Top words for topic  BASEBALL
 organization
-baseball
 team
+baseball
 game
 don
 university
 posting
-host
 nntp
-apr
+host
+games
 
 Top words for topic  MEDICAL
 organization
 pitt
-don
 msg
-university
-science
+don
 gordon
 banks
+geb
 medical
 health
+food
 
 Top words for topic  WINDOWS
 max
 windows
-organization
 bhj
 giz
+organization
 file
-university
+qax
+bxn
+win
 dos
-chz
-files
 
 Top words for topic  GUNS
 gun
 organization
-guns
 don
-firearms
-weapons
-posting
+guns
+government
 then
-file
+posting
+firearms
 control
+university
 
 Top words for topic  XWINDOWS
 window
-file
 organization
-program
 server
-motif
 mit
+motif
 widget
-entry
-output
+sun
+host
+available
+file
 
 Top words for topic  MIDEAST
 israel
 turkish
-armenian
 israeli
-armenians
+armenian
 jews
+armenians
 organization
 then
 don
-armenia
+war
 
 Top words for topic  MAC
+scx
+chz
+rlk
+uww
+rck
+gcx
 organization
-mac
-apple
-posting
-university
-nntp
-host
-drive
-don
-system
+rmc
+den
+lhz
 
 Top words for topic  PC
-scsi
-drive
 organization
+drive
+scsi
 card
-system
-ide
-bus
-controller
-disk
 university
+posting
+host
+system
+nntp
+dos
 

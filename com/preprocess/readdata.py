@@ -29,17 +29,19 @@ def read_data(trainlabel,trainunlabel=None):
     To read all the training data and return data as pandas data frame
     with three columns : id,text,label
     """ 
-    print(trainunlabel)
+
     df_label = pd.read_csv(trainlabel) 
+    print("Shape of label data")
     print(df_label.shape)
     df_combine = df_label
     if trainunlabel :
         df_unlabel = pd.read_csv(trainunlabel) 
+        print("Shape of unlabel data")
         print(df_unlabel.shape)
         df_combine = pd.concat([df_combine,df_unlabel],axis=0) 
-    df_combine = df_combine.dropna()
+    df_combine = df_combine.dropna() 
+    print("shape of label + unlabel data")
     print(df_combine.shape) 
-    print(df_combine.columns)
     df_combine = df_combine[["id","label","text"]]
     #df_combine.to_csv('/home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train/df_combine.csv',sep=',')
     return df_combine

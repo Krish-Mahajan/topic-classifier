@@ -43,7 +43,8 @@ class NaiveBayes(object):
         p_w_c /= denoms[np.newaxis,:]  
 
 
-    def top_10_words(self,name,path=None): 
+    def top_10_words(self,name,path): 
+        print(path)
         if not path:f = open("./output/distinctive_words_"+name+ ".txt","w") 
         else: f = open(path,"w") 
         for i in range(self.p_w_c.shape[1]):
@@ -58,12 +59,13 @@ class NaiveBayes(object):
                 f.write(self.vocab.keys()[self.vocab.values().index(word[0])])
                 f.write("\n") 
             f.write("\n")
-        f.close()
+        f.close() 
+        return f
 
 
-    def save_model(self,name,path =None,):
-        if not path: f = open("./output/model-file_"+ name + ".p","w")
-        else : f =  open(path)
+    def save_model(self,name,path): 
+        if not path: f = open("./output/model-file_"+ name + ".p","w")       
+        else : f =  open(path,"w")
         pickle.dump(self,f)
         f.close()
 
