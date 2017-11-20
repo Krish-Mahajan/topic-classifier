@@ -1,61 +1,57 @@
 
-*Work In Progress*
-
-Directorty structure  
---------------------- 
-
-training/topic1/documents.....     
-training/topic2/documents.....    
-training/topic3/documents.....    
-training/topic4/documents....  
-training/topic5/documents...  
-training/topic6/documents....       
-training/topic_n/documents....    
 
 
 
-testing/topic1/documents.....     
-testing/topic2/documents.....    
-testing/topic3/documents.....    
-testing/topic4/documents....  
-testing/topic5/documents...  
-testing/topic6/documents....       
-testing/topic_n/documents....    
+Topic Classifier
+-----------------------
 
-
-topics.py  
-snb.py   
-readme.md  
-
-### Instruction to train the data. (for ex.)    
-
-python main.py train /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train/train.csv model-file 0.7 NOT #From Command Line old method 
-
-python main.py train /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train_labeled/trainlabel.csv model-file 1.0  /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train_unlabeled/trainunlabel.csv    ## From Command Line new Method
+This projects uses principles of semi-supervised text classification using Expectation Maximization algorithm to predict the topics of test dataset using training datasets which are labeled as well as unlabeled.   
+Label datasets includes the topic information about the text whereas unlabel data just has text data. 
+In this project i have implemented [expectation maximization naieve bayes](https://www.cs.cmu.edu/~tom/pubs/NigamEtAl-bookChapter.pdf) algorithm to train on the label datasets as well as leverage unlabel datasets. 
  
-python main.py train ../data/train_labeled model-file 1.0  ##from command line
-      mode = train   
-      dataset-directory = training   
-      model-file = model-file   
-      fraction = 0.8 (Could be any number between [0,1])  
-      train data/train model-file 0.8
 
-### Instruction to test the data. (for ex.)  
-python main.py test ../data/test  model-file 1.0  /home/krish.mahajan/Documents/other_projects/topic-classification/TopicClassfier/data/train_unlabeled/trainunlabel.csv  ##from command line
-      mode = test  
-      dataset-directory = testing  
-      model-file = model-file   
-      fraction = same as fraction while train mode  
-      test data/test model-file.p 0.8
+Folder Structure 
+============================
+
+### top-level directory layout
+
+    .
+    |-- data                        # required training and testing data
+    |-- com/preprocess/logic/*      # contains source files of semi supervised EM Algorithm
+    |--  com/preprocess/*           # contains source files of python module for preprocessing data
+    |-- com/resources               # contains resources required by the project
+    |-- requirements.txt            # contains required Tools and utilities 
+    |--  main.py					# python main module
+    |-- train.py					# Module to train dataset 
+    |-- test.py 					# Module to make predction on test dataset 
+    |-- ipython.ipynb				# Step by Step tutorial about the project through Jupyter notebook
+    |-- LICENSE
+    |-- README.md
+
+### Install the requirements
+ 
+* Install the requirements using `pip install -r requirements.txt`.
+    * Make sure you use Python 2.7.
+    * You may want to use a virtual environment for this.
+
+Usage
+-----------------------
+
+* Run `python main.py train <label_data_file> <unlabel_data_file>` to train the algorithm for label + unlabel dataset 
+	* This will create `distinctive_words.txt` and `model_file.p` in the `com/output` folder.
+* Run `python main.py test <test_data_file>  x` to predict the topics of test dataset  a
+    * This will create `predictions.csv` in the `com/output` folder. 
+    * This will also output accuracy on training dataset when data was trained on just label data as well as label+unlabel data  
+    * This module 'll also output confusion matrix
 
 
 
 # Results     
 
-- For fraction 1 :Accuracy = 82%      
-- For fraction 0.5 : Accuracy 79%    
-- For Fraction 0.01 : Accuracy 42%     
-- For fraction 0.0 : Accuracy 10%  
+* For dataset with label data = 543 rows and unlabel data = 11314 rows  with 20 possible classes
+	* Accuracy = 54% when trained on just label data  and test data size = 6870 rows
+	* Accuracy = 62% when trained on label + unlabel data and test data size = 6870 rows    
+ 
 
 
 

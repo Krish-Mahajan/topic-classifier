@@ -44,7 +44,7 @@ class NaiveBayes(object):
 
 
     def top_10_words(self,name,path): 
-        print(path)
+        top = {}
         if not path:f = open("./output/distinctive_words_"+name+ ".txt","w") 
         else: f = open(path,"w") 
         for i in range(self.p_w_c.shape[1]):
@@ -55,12 +55,13 @@ class NaiveBayes(object):
             top_10.reverse()
             f.write("Top words for topic  "+ self.label_dict.keys()[self.label_dict.values().index(i)].upper())
             f.write("\n")
-            for word in top_10:
+            for word in top_10: 
+                top[self.label_dict.keys()[self.label_dict.values().index(i)].upper()]= self.vocab.keys()[self.vocab.values().index(word[0])]
                 f.write(self.vocab.keys()[self.vocab.values().index(word[0])])
                 f.write("\n") 
             f.write("\n")
         f.close() 
-        return f
+        return top
 
 
     def save_model(self,name,path): 
